@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+            background:lightgray;
+            text-align:center;
+        }
+
+        .menu{
+            background:teal;
+            padding:20px;
+        }
+
+        .menu a{
+            color:white;
+            text-decoration:none;
+            margin:20px;
+            font-size:20px;
+        }
+
+        input, textarea{
+            width:300px;
+            padding:10px;
+            margin:10px;
+        }
+
+        button{
+            background:teal;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            cursor:pointer;
+        }
+    </style>
+
+    <script>
+        function submitForm(){
+            alert("Submitted Successfully");
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<h1>Contact Us</h1>
+
+<input type="text" placeholder="Enter Name"><br>
+
+<input type="email" placeholder="Enter Email"><br>
+
+<textarea placeholder="Message"></textarea><br>
+
+<button onclick="submitForm()">Submit</button>
+
+</body>
+</html>
