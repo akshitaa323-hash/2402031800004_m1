@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is title</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    
+</head>
+<style>
+    body{
+        background-color: rgb(8, 11, 11);
+    }
+@media screen and (min-width: 480px) {
+    body{
+        background-color:rgb(197, 242, 242);
+    }
+    
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#division1 {
+    animation: slideIn 2s ease-in-out;
+}
+#division2 {
+    animation: slideIn 2s ease-in-out;
+    animation-delay: 0.5s;
+}
+#division3 {
+    animation: slideIn 2s ease-in-out;
+    animation-delay: 1s;
+}
+#division4 {
+    animation: slideIn 2s ease-in-out;
+    animation-delay: 1.5s;
+}
+</style>
+<body>
+<div id="division1">
+    <h2>Welcome to my world... </h2>
+</div>
+<div id="division2">
+    <h3> Its a beautiful place</h3>
+</div>
+<div id="division3">    
+    <h4>AKSHITA</h4>
+</div>
+<div id="division4">
+    <h2>Agrawal</h2>   
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+#division1{
+    background-color: rgba(144, 117, 249, 0.499);
+    float:left;
+    width: 40%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#division2{
+    background-color: rgb(245, 189, 189);
+    float: right; 
+    font-family: 'Times New Roman', Times, serif;
+    height: 50px;
+    width: 40%;
+
+}
+#division3{
+    background-color: rgb(236, 0, 0);
+    float: left;
+    width: 40%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#division4{
+    background-color: rgb(154, 113, 255);
+    float: left;
+    width: 10%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#division1:hover{
+    background-color: rgb(209, 0, 0);   
+    color: rgb(117, 230, 25);
+}
+#division2:hover{
+    background-color: rgb(240, 244, 25);   
+    color: rgb(243, 192, 10);
+}
+#division3:hover{
+    background-color: rgb(80, 9, 244);   
+    color: rgb(255, 255, 255);
+}
+#division4:hover{
+    background-color: rgb(255, 1, 149);   
+    color: rgb(19, 1, 1);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+
+    <style>
+        body {
+            background-color: rgba(231, 160, 106, 0.362);
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            margin: auto;
+            margin-top: 20px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 2px;
+        }
+
+        .submit-btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <table border="2">
+
+            <!-- Heading with colspan -->
+            <tr>
+                <td colspan="2">
+                    <h1>Registration Form</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" id="name" name="name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" id="lastname" name="lastname" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Contact Number:</td>
+                <td>
+                    <input type="tel" id="contact" name="contact" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="date" id="dob" name="dob" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="number" id="age" name="age" required>
+                </td>
+            </tr>
+
+            <!-- Rowspan used for Gender -->
+            <tr>
+                <td rowspan="2">Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea id="address" name="address" rows="4"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>City:</td>
+                <td>
+                    <input type="text" id="city" name="city" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pincode:</td>
+                <td>
+                    <input type="number" id="pincode" name="pincode" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Joining Date:</td>
+                <td>
+                    <input type="date" id="joining-date" name="joining-date" required>
+                </td>
+            </tr>
+
+            <!-- Submit button with colspan -->
+            <tr>
+                <td colspan="2" class="submit-btn">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>

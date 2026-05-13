@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+</head>
+<style>
+    body{
+        background-color: rgba(231, 160, 106, 0.362);
+    }
+    
+</style>
+<body>
+    <form action="">
+        <h1>Registration form</h1>
+        <label for="name">First Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br>
+
+        <label for="contact number">Contact Number:</label><br>
+        <input type="tel" id="contact number" name="contact number" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="date of birth"> Date of birth:</label>
+        <input type="date" id="date of birth" name="date of birth" required><br><br>
+
+        <label for="age">Age:</label><br>   
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" id="male" name="gender" value="male">Male
+        <input type="radio" id="female" name="gender" value="female">Female <br><br>
+
+        <label for="Address">Address:</label><br><br>
+        <textarea id="Address" name="Address" rows="4" cols="30"> </textarea><br><br>
+
+        <label for="city">city: </label><br><br>
+        <select id="city" name="city" required>
+            <option value="">Select a city</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Surat">Surat</option>
+        </select><br><br>
+
+        <label for="pincode">Pincode: </label><br><br>
+        <input type="number" id="pincode" name="pincode" required><br><br>
+
+        <label for="Joining date">Joining date:</label><br><br>
+        <input type="date" id="Joining date" name="joining date" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
