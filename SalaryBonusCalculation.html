@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Bonus Calculation</title>
+</head>
+<body>
+    <h2>Salary Bonus Calculation</h2>
+    <script>
+        var salary = prompt("Enter your salary");
+        var bonus = 0;
+
+        if(salary > 50000)
+        {
+            bonus = salary * 0.1; // 10% bonus
+        }
+        else
+        {
+            bonus = salary * 0.05; // 5% bonus
+        }
+
+        document.write("Your bonus is: " + bonus);
+    </script>
+</body>
+</html>

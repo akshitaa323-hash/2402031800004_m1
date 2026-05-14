@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdrawal Validation</title>
+</head>
+<body>
+    <h2>ATM Withdrawal Validation</h2>
+    <script>
+        var balance = 1000; 
+        var withdrawal = prompt("Enter the amount you want to withdraw");
+        if(withdrawal > balance)
+        {
+            document.write("Insufficient funds.");
+        }
+        else
+        {
+            balance -= withdrawal;
+            document.write("Withdrawal successful. Your new balance is: " + balance);
+        }
+    </script>
+</body>
+</html>

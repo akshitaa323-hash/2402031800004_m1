@@ -50,14 +50,9 @@ h4{
     margin: auto;
 }
 h2{
-<<<<<<< HEAD
-    position: absolute;
-    left: 50px;
-    top: 100px;
+    text-transform: uppercase;
+    text-decoration: overline underline;
+    font-size: xx-large;
+    color: rgb(255, 0, 0);
 }
-=======
-    position: fixed;
-    left: 50px;
-    top: 100px;
-}
->>>>>>> 82be41cd575bdcdda23acf1448ed009b704d3a46
+

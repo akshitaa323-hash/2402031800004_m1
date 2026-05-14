@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+</head>
+<body>
+    <script>
+var Car = new Array(3);
+Car[0] = "Ford";
+Car[1] = "Toyota";
+Car[2] = "Honda";
+
+var Car2 = new Array("Ford","   ", "Toyota","   ", "Honda");
+
+var Car3 = ["odi","   ", "innova","   ", "vagon"];
+
+document.write(Car2);   
+
+Car2.push("Yamaha");
+document.write(Car2); 
+
+Car2.pop();
+document.write(Car2); 
+
+var data = Car2.concat(Car3);
+document.write(data); 
+</script>
+</body>
+</html>
