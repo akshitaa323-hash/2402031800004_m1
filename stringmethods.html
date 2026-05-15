@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        var str = "Hello World";
+        document.write(str.length + "<br><br>");
+        document.write(str.toUpperCase() + "<br><br>");	
+        document.write(str.toLowerCase() + "<br><br>");	
+        document.write(str.indexOf("o") + "<br><br>");	
+        document.write(str.lastIndexOf("o") + "<br><br>");	
+        document.write(str.slice(0, 5) + "<br><br>");	
+        document.write(str.replace("World", "JavaScript") + "<br><br>");	
+        document.write(str.charAt(0) + "<br><br>");
+        document.write(str.split(" ") + "<br><br>");
+        document.write(str.trim() + "<br><br>");	
+        document.write(str.includes("World") + "<br><br>");	
+        document.write(str.startsWith("Hello") + "<br><br>");
+        document.write(str.endsWith("World") + "<br><br>");
+        document.write(str.substring(0, 5) + "<br><br>");	  
+        document.write(str.substr(0, 5) + "<br><br>");	   
+        document.write(str.repeat(2) + "<br><br>");	
+        document.write(str.padStart(20, "*") + "<br><br>");	
+        document.write(str.padEnd(20, "*") + "<br><br>");   
+        document.write(str.concat("!", " How are you?") + "<br><br>");
+        document.write(str.match(/o/g) + "<br><br>");	
+        document.write(str.search("World") + "<br><br>");	
+        document.write(str.replace(/o/g, "0") + "<br><br>");	 
+    </script>
+</body>
+</html>

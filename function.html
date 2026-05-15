@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+        <script>
+    function foo (p1) 
+    {
+	    if (typeof(p1) == "number")
+		return 0;	// Return a number
+	    else
+        if (typeof(p1) == "string")
+		return "zero"; // Return a string
+
+	// If no value being explicitly returned 
+	// "undefined" is returned.
+    }
+
+    foo(1);		// returns 0
+    foo("abc");		// returns "zero"
+    foo();		// returns undefined
+
+    
+    document.write(foo(1) + "<br><br>");
+    document.write(foo("abc") + "<br><br>");
+    document.write(foo() + "<br><br>");
+    </script>
+</body>
+</html>

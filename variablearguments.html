@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Arguments</title>
+</head>
+<body>
+    <script>
+    function sum ()
+    {
+        var s = 0;
+        for(var i = 0; i < arguments.length; i++)
+	    s += arguments[i];
+        return s;
+    }
+
+    var a = sum(1, 2, 3);		// returns 6
+    var a = sum(1, 2, 3, 4, 5);	// returns 15
+    var a = sum(1, 2, "3", 4, 5);	// returns "1245" 
+    
+    document.write(a);  
+    document.write("<br><br>");
+    document.write(sum(1, 2, 3) + "<br><br>");
+    document.write(sum(1, 2, 3, 4, 5) + "<br><br>");
+    document.write(sum(1, 2, "3", 4, 5) + "<br><br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM PIN Checking</title>
+</head>
+<body>
+
+    <h2>ATM PIN Checking</h2>
+
+    <script>
+        let correctPin = 1234;
+        let userPin = parseInt(prompt("Enter ATM PIN:"));
+
+        if (userPin == correctPin) {
+            document.write("PIN is Correct. Access Granted!");
+        } 
+        else {
+            document.write("Incorrect PIN. Access Denied!");
+        }
+    </script>
+
+</body>
+</html>
