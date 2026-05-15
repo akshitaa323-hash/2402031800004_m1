@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="js.css">
 </head>
 <body>
     <h2>For Loop in JavaScript</h2>
@@ -67,11 +67,11 @@
     <br><br>
     <h2>Countdown from 10 to 1</h2>
     <script>
-        let count = 10;
-        while(count >= 0)
+        let counting = 10;
+        while(counting >= 0)
         {
-            document.write(count + "<br>");
-            count--;
+            document.write(counting + "<br>");
+            counting--;
         }
     </script>
 
@@ -94,6 +94,25 @@
 
     console.log("password is correct");
     </script>
+
+    <br><br>
+    <script>
+    let str = prompt("Enter a string");
+    let count = 0;
+
+    if (str != null) {
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || 
+                str[i] == 'o' || str[i] == 'u' ||
+                str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || 
+                str[i] == 'O' || str[i] == 'U') {
+                count++;
+            }
+        }
+
+        document.write("Number of vowels in the string: " + count);
+    }
+</script>
 </body>
 </html>
 

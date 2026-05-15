@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Total Marks Using Loop</title>
+    <link rel="stylesheet" href="js.css">
 </head>
 <body>
-    <h2>Total Marks in JavaScript</h2>
+     <h2>Total Marks in JavaScript</h2>
+    <p id="result"></p>
+
     <script>
-        var marks1 = parseInt(prompt("Enter marks for subject 1:"));
-        var marks2 = parseInt(prompt("Enter marks for subject 2:"));
-        var marks3 = parseInt(prompt("Enter marks for subject 3:"));
-        var totalMarks = marks1 + marks2 + marks3;
-        document.write("Total Marks: " + totalMarks);
+        var totalMarks = 0;
+
+        // Loop for taking input of 3 subjects
+        for (var i = 1; i <= 3; i++) {
+            var marks = parseInt(prompt("Enter marks for subject " + i + ":"));
+            totalMarks = totalMarks + marks;
+        }
+
+        // Display result
+        document.getElementById("result").innerHTML =
+        "Total Marks: " + totalMarks;
     </script>
+
 </body>
 </html>
