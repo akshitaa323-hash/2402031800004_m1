@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+</head>
+
+<body>
+    <form onsubmit="return checkMail()">
+    <input type="text" id="myText">
+    <input type="email" id="myText2">
+    <input type="submit" value="Submit">
+    </form>
+    <script>
+	function checkMail()
+	{
+		var a = document.getElementById("myText").value;
+		var b = document.getElementById("myText2").value;
+		var pattern ="^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[\\w]$”;
+		var regex = new RegExp(pattern);
+		if(regex.test(a))
+		{
+			alert("Valid");
+		}
+		else
+		{
+			alert("Invalid");
+		}
+	}
+
+    </script>
+</body>
+</html>
