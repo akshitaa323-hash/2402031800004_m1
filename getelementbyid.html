@@ -17,9 +17,9 @@
 	{
 		var a = document.getElementById("myText").value;
 		var b = document.getElementById("myText2").value;
-		var pattern ="^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[\\w]$”;
+		var pattern = "^[\\w-\\.]+@[\\w-]+\\.[a-zA-Z]{2,}$";
 		var regex = new RegExp(pattern);
-		if(regex.test(a))
+		if(regex.test(b))
 		{
 			alert("Valid");
 		}
@@ -27,7 +27,7 @@
 		{
 			alert("Invalid");
 		}
-	}
+	}~
 
     </script>
 </body>
