@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    
+    <h2>Registration Form</h2>
+    
+    <form id="RegForm" onsubmit="return validateForm()" method="post" align="center">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label for="course">Select your Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="Btech">Btech</option>
+            <option value="Mtech">Mtech</option>
+            <option value="Phd">Phd</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function validateForm() {
+            var form = document.getElementById("RegForm");
+            var name = form.name.value.trim();
+            var email = form.email.value.trim();
+            var password = form.password.value;
+            var confirmPassword = form.confirm_password.value;
+            var mobile = form.mobile.value;
+            var course = form.course.value;
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (name === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+            if (!regEmail.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            if (!/^\d{10}$/.test(mobile)) {
+                alert("Please enter a valid 10-digit mobile number.");
+                return false;
+            }
+            if (course === "") {
+                alert("Please select a course.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
