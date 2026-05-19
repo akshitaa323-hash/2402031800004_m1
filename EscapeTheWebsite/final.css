@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #050816;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Background Grid */
+
+body::before{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.08) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+}
+
+.card{
+    text-align: center;
+
+    width: 550px;
+
+    padding: 50px;
+
+    border: 2px solid cyan;
+    border-radius: 20px;
+
+    background: rgba(0,0,0,0.6);
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 40px cyan;
+
+    animation: glow 2s infinite alternate;
+}
+
+h1{
+    color: cyan;
+    font-size: 42px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+button{
+    margin-top: 30px;
+
+    padding: 15px 35px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: cyan;
+    color: black;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.08);
+
+    box-shadow:
+    0 0 10px cyan,
+    0 0 30px cyan;
+}
+
+/* Glow Animation */
+
+@keyframes glow{
+
+    from{
+        box-shadow:
+        0 0 20px cyan;
+    }
+
+    to{
+        box-shadow:
+        0 0 50px cyan;
+    }
+}
+h3{
+    margin-top: 20px;
+    color: cyan;
+    font-size: 26px;
+}

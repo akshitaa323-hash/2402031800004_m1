@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #050816;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Matrix background effect */
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+    linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.08) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+    opacity: 0.2;
+}
+
+.main-container{
+    z-index: 1;
+}
+
+.card{
+    width: 500px;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.6);
+
+    box-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan;
+}
+
+h1{
+    color: cyan;
+    font-size: 65px;
+    letter-spacing: 3px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+p{
+    color: #d1d1d1;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+
+button{
+    padding: 18px 40px;
+    background: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: cyan;
+    color: black;
+    transform: scale(1.08);
+
+    box-shadow:
+    0 0 10px cyan,
+    0 0 30px cyan;
+}
