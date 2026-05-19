@@ -5,7 +5,7 @@ function checkPassword()
         "password"
     ).value;
 
-    // room1 wala code
+    // room1 wala random code
     let correctPassword =
     localStorage.getItem(
         "secretCode"
@@ -28,15 +28,25 @@ function checkPassword()
         {
             window.location.href =
             "room2.html";
-        },1500);
+        },1000);
     }
 
     else
     {
+        // popup alert
+        alert(
+            "❌ Incorrect Code! Try Again."
+        );
+
         message.innerHTML =
-        "Access Denied ❌";
+        "Incorrect Code ❌";
 
         message.style.color =
         "red";
+
+        // input clear
+        document.getElementById(
+            "password"
+        ).value = "";
     }
 }
